@@ -2,10 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inputs</title>
 </head>
+<script>
+    function Data(){
+        var  email, pss;
+        email=document.getElementById("my_email").value;
+        pss=document.getElementById("my_pss").value;
+        console.log("Dirección de correo: ",email);
+        console.log("Contraseña: ",pss);
+    }
+</script>
 <body>
     <div>
         <form action="" onsubmit="Data()">
@@ -23,13 +31,3 @@
     </div>
 </body>
 </html>
-<script>
-    function Data(){
-        var  email, pss;
-        email=document.getElementById("my_email").value;
-        pss=document.getElementById("my_pss").value;
-
-        console.log('Dirección de correo: ',email);
-        console.log('Contraseña: ',pss);
-    }
-</script>
